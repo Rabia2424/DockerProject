@@ -1,0 +1,15 @@
+package com.book.dockerproject;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@SpringBootApplication
+@EntityScan(basePackages = "com.book.dockerproject.Models")
+public class DockerProjectApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(DockerProjectApplication.class, args);
+    }
+
+}
