@@ -9,4 +9,9 @@ public class HomeController {
     public String getIndex(){
         return "redirect:/students";
     }
+
+    @GetMapping("/allLectures")
+    public String getLectures(){
+        return "redirect:/lectures";
+    }
 }
