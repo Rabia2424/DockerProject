@@ -1,7 +1,7 @@
 
 services:
   DockerProject:
-    image: myapp:0.0.1
+    image: rabia4488/student_lecture
     ports:
       - 8080:8080
     environment:
