@@ -67,7 +67,7 @@ public class StudentLectureController {
     public ResponseEntity<?> registerDelete(@PathVariable Long id){
         try {
             studentLectureService.delete(id);
-            return ResponseEntity.ok("Student Lecture deleted succcessfully");
+            return ResponseEntity.ok("Student Lecture deleted");
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
         }
